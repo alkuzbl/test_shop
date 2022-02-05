@@ -46,7 +46,6 @@ const cartSlice = createSlice({
       }
       state.data.totalNumber += 1;
       state.data.totalCost = state.data.cart.reduce(
-        // eslint-disable-next-line no-return-assign
         (totalCostItem, { price, quantity }) => (totalCostItem += price * quantity),
         0,
       );
@@ -56,12 +55,10 @@ const cartSlice = createSlice({
       if (item) {
         item.quantity = action.payload.quantity;
         state.data.totalCost = state.data.cart.reduce(
-          // eslint-disable-next-line no-return-assign
           (totalCostItem, { price, quantity }) => (totalCostItem += price * quantity),
           0,
         );
         state.data.totalNumber = state.data.cart.reduce(
-          // eslint-disable-next-line no-return-assign
           (totalQuantityItem, { quantity }) => (totalQuantityItem += quantity),
           0,
         );
