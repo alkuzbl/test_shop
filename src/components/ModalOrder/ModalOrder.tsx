@@ -4,24 +4,22 @@ import { Button, Container, Modal } from '@mui/material';
 import { useDispatch } from 'react-redux';
 
 import { FormControl, InputF } from 'components/common';
+import { ModalOrderPropsType } from 'components/ModalOrder/types';
 import { placeOrder } from 'store/middlewares/placeOrder';
 import { orderValidationSchema } from 'utils/validationSchemes';
 
-type ModalOrderPropsType = {
-  open: boolean;
-  onClose: (value: boolean) => void;
-};
 export const ModalOrder: FC<ModalOrderPropsType> = ({ open, onClose }) => {
   const dispatch = useDispatch();
+
   const handleSubmitOrder = (value: any) => {
     dispatch(placeOrder(value));
-
     onClose(false);
   };
 
   const handleClose = () => {
     onClose(false);
   };
+
   return (
     <Modal open={open} onClose={handleClose}>
       <Container

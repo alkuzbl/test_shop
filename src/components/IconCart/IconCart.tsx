@@ -16,6 +16,7 @@ export const IconCart = () => {
   );
 
   const handleClickCart = () => navigate('swipes/cart', { replace: true });
+
   return (
     <Box
       sx={{

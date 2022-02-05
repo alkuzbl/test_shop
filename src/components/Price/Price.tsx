@@ -6,20 +6,16 @@ import { useDispatch } from 'react-redux';
 import { PricePropsType } from 'components/Price/types';
 import { addItemCart } from 'store/reducers/cart-slice';
 
-export const Price: FC<PricePropsType> = ({
-  price,
-  titleButton,
-  isAvailable,
-  title,
-  id,
-  image,
-}) => {
+export const Price: FC<PricePropsType> = props => {
+  const { price, titleButton, isAvailable, title, id, image } = props;
+
   const dispatch = useDispatch();
 
   const handleAddItemCart = () => {
     const cartData = { id, title, image, price, quantity: 1 };
     dispatch(addItemCart(cartData));
   };
+
   return (
     <Box component="div" textAlign="center">
       <Typography

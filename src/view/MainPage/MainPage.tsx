@@ -20,7 +20,7 @@ export const MainPage = () => {
           color="text.primary"
           gutterBottom
         >
-          Choose a product
+          Щетки стеклоочистителя
         </Typography>
       </Container>
       <Container maxWidth="md" component="main" sx={{ pb: 6 }}>

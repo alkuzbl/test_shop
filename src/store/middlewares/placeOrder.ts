@@ -16,7 +16,7 @@ export const placeOrder = createAsyncThunk<
 >('cart/placeOrder', (data, { getState }) => {
   const dataForPlacingOrder = getState().cart.data.cart;
 
-  console.log({ ...data, dataItem: dataForPlacingOrder });
-  // console.log(JSON.stringify({ ...data, dataItem: dataForPlacingOrder }));
+  // console.log({ ...data, dataItem: dataForPlacingOrder });
+  console.log(JSON.stringify({ ...data, dataItem: dataForPlacingOrder }));
   localStorage.clear();
 });

@@ -4,18 +4,12 @@ import { Container, Grid, TextField, Typography } from '@mui/material';
 import { useDispatch } from 'react-redux';
 
 import { removeItem, setQuantityItem } from 'store/reducers/cart-slice';
+import { CartPropsType } from 'view/CartPage/Cart/types';
 
-type CartPropsType = {
-  id: string;
-  title: string;
-  count: number;
-  price: number;
-  image: string;
-};
 export const Cart: FC<CartPropsType> = props => {
-  const dispatch = useDispatch();
-
   const { count, title, id, price, image } = props;
+
+  const dispatch = useDispatch();
 
   const [quantity, setQuantity] = useState<number>(count);
   const [cost, setCost] = useState<number>(price);
