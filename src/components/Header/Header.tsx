@@ -8,7 +8,7 @@ import { IconCart } from 'components';
 export const Header = () => {
   const navigate = useNavigate();
 
-  const handleClickGoMainPage = () => navigate('swipes', { replace: true });
+  const handleClickGoMainPage = () => navigate('wipers', { replace: true });
 
   return (
     <AppBar

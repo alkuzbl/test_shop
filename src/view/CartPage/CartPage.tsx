@@ -19,7 +19,7 @@ export const CartPage = () => {
 
   const handleClickOrderRegistration = () => setOpen(true);
   if (totalNumber < 1) {
-    return <Navigate to="/swipes" />;
+    return <Navigate to="/wipers" />;
   }
   return (
     <>

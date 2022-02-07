@@ -15,7 +15,7 @@ export const IconCart = () => {
     state => state.cart.data,
   );
 
-  const handleClickCart = () => navigate('swipes/cart', { replace: true });
+  const handleClickCart = () => navigate('wipers/cart', { replace: true });
 
   return (
     <Box

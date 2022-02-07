@@ -13,10 +13,10 @@ export const App = () => (
     <CssBaseline />
     <Header />
     <Routes>
-      <Route path="swipes" element={<MainPage />} />
-      <Route path="swipes/cart" element={<CartPage />} />
+      <Route path="wipers" element={<MainPage />} />
+      <Route path="wipers/cart" element={<CartPage />} />
       <Route path="*" element={<div>404</div>} />
-      <Route path="/" element={<Navigate to="swipes" />} />
+      <Route path="/" element={<Navigate to="wipers" />} />
     </Routes>
   </div>
 );
