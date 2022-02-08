@@ -1,7 +1,7 @@
 import { Nullable, StatusType } from 'types';
 
 export type WiperType = {
-  id: string;
+  _id: string;
   title: string;
   image: string;
   description: DescriptionElement[];
@@ -10,7 +10,7 @@ export type WiperType = {
   price: number;
 };
 export type DescriptionElement = {
-  id: string;
+  _id: string;
   name: string;
   title: string | number;
 };
