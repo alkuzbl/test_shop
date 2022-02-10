@@ -1,11 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// import { v1 } from 'uuid';
-//
-// import image2 from 'assets/images/image_600_450.png';
-// import image3 from 'assets/images/image_600_500.png';
-// import image4 from 'assets/images/image_650_400.png';
-// import image1 from 'assets/images/img1.png';
 import { getWipers } from 'store/middlewares/getWipers';
 import { ProductSliceType } from 'store/reducers/types';
 
